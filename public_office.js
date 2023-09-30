@@ -93,7 +93,7 @@ def plot_map(place: str):
 
 
 pn.extension(sizing_mode="stretch_width")
-variable_widget = pn.widgets.Select(name="place", value="市役所", options=["市役所", "区役所"])
+variable_widget = pn.widgets.Select(name="place", value="市役所", options=["市役所", "区役所", "県庁"])
 bound_plot = pn.bind(plot_map, place=variable_widget)
 first_app = pn.Column(variable_widget, bound_plot)
 first_app.servable()
