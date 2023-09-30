@@ -1,10 +1,9 @@
 import json
 from urllib import parse, request
 
+import folium
 import pandas as pd
 import panel as pn
-
-import folium
 
 
 def _get_locations(
